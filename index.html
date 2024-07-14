@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isha Kalwani | Portfolio</title>
+    <title>Isha Kalwani</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="eye.png">
 </head>
 <style>
     h1 {
@@ -21,8 +22,14 @@
     <header>
         <div class="container">
             <nav>
-                <h1> <a href="#home"><img src="isha.png" alt="Isha Kalwani"> </a></h1>
-                <ul class="header-items">
+                <h1> <a href="#home" class="logo">
+                    <img src="isha.png" alt="Isha Kalwani"> </a></h1>
+                <div class="menu-toggle" id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+                <ul class="header-items" id="header-items">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
@@ -33,18 +40,20 @@
     </header>
 <main>
         <section id="home">
+    <div class="active">
             <div class="container">
                 <div class="content">
-                    <h1 style="font-size: 73px; padding-top: 80px;">Hi, I'm Isha Kalwani</h1>
-                    <div id="tagline" style="font-size: 45px;">
+                    <h1 style="font-size: 34px; padding-top: 97px;">Hi, I'm Isha Kalwani</h1>
+                    <div id="tagline" style="font-size: 23px;">
                         Passionate about 
                         <span id="rotating-text"></span>
                     </div>
-                    <div class="subtext">Check out my skills, work experience, projects, and whatever else I've been up to!</div>
+                    <div class="subtext" style="font-size:20px">Check out my skills, work experience, projects, and whatever else I've been up to!</div>
                     <div class="cta-buttons">
-                        <a href="#projects" class="cta-button">View Projects</a>
+                        <a href="#projects" class="cta-button" style="font-size:18px;  padding: 8px 15px;">View Projects</a>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -53,38 +62,38 @@
         <div class="about-content">
             <img src="me.jpeg" alt="Isha Kalwani" class="profile-photo">
             <div class="about-text">
-                <p style="font-size: 38px;">I'm Isha, a senior majoring in <span class="highlight-mixed"> Computer Science</span> with a minor in Economics at the University of Michigan - Ann Arbor. As a girl from <span class="highlight-mixed"> Benin</span> navigating the tech world, my journey is a unique blend of  <span class="highlight-mixed">diverse perspectives</span> and innovative problem-solving. I am passionate about creating user-centric applications that make a real <span class="highlight-mixed">impact</span> on people's lives.</p>
+                <p style="font-size: 20px;">I'm Isha, a senior majoring in <span class="highlight-mixed"> Computer Science</span> with a minor in Economics at the University of Michigan - Ann Arbor. As a girl from <span class="highlight-mixed"> Benin</span> navigating the tech world, my journey is a unique blend of  <span class="highlight-mixed">diverse perspectives</span> and innovative problem-solving. I am passionate about creating user-centric applications that make a real <span class="highlight-mixed">impact</span> on people's lives.</p>
             </div>
             
         </div>
-        <p style="font-size: 45px; margin-top: 40px;"><span class="highlight-mixed">🚀 What I'm up to:</span></p>
-                <ul style="font-size: 35px;">
+        <p style="font-size: 26px; margin-top: 40px;"><span class="highlight-mixed">🚀 What I'm up to:</span></p>
+                <ul style="font-size: 19px;">
                     <li>Developing full-stack web applications using technologies like React, Node.js, and Flask</li>
                     <li>Enhancing web accessibility and user experience for <a class="custom-link" href="https://caen.engin.umich.edu">Michigan Engineering</a></li>
                     <li>Web Developer for <a class="custom-link" href="https://posamag.com">POSA (Portrait of South Asia) Magazine</a> at the University of Michigan, creating a digital platform for authentic South Asian narratives</li>
                 </ul>
 
-                <p style="font-size: 45px;"><span class="highlight-mixed">🌟 Involvement:</span></p>
-                <ul style="font-size: 35px;">
+                <p style="font-size: 26px;"><span class="highlight-mixed">🌟 Involvement:</span></p>
+                <ul style="font-size: 19px;">
                     <li>Builds Team Lead at <a class="custom-link" href="https://www.mproduct-umich.org">MProduct (Premier Product Management Club)</a></li>
                     <li>Member of <a class="custom-link" href="https://www.geecsumich.com">GEEKS (Girls in Electrical Engineering and Computer Science)</a></li>
                     <li>Software Engineer at <a class="custom-link" href="https://caen.engin.umich.edu">CAEN</a>, Central IT provider for Michigan Engineering</li>
                     <li>Part of <a class="custom-link" href="https://rewritingthecode.org">Rewriting the Code</a> community, empowering women in tech through mentorship and collaboration</li>
                 </ul>
-                <p style="font-size: 45px;"><span class="highlight-mixed">👩‍💻 When I'm not coding:</span></p>
-                <ul style="font-size: 35px;">
+                <p style="font-size: 26px;"><span class="highlight-mixed">👩‍💻 When I'm not coding:</span></p>
+                <ul style="font-size: 19px;">
                     <li>Dancing my heart out - because sometimes debugging requires fancy footwork! <a class="custom-link" href="https://youtu.be/-fK73uocrJU?feature=shared">Here</a> are some of my favorite dance performances and practice sessions</li>
                     <li>Curating the perfect <a class="custom-link" href="https://open.spotify.com/user/31rvqskpxz3rrovitcp6qmxdbc4e?si=10161634b32847b5">Spotify playlists</a> for coding sessions and dance breaks</li>
                     <li>Optimizing my productivity with my own creation -  <a class="custom-link" href="https://moo-box.vercel.app">MooBox</a></li>
                     <li>Writing tech-inspired poetry - 'Roses are #FF0000, Violets are #0000FF...</li>
                 </ul>
-                <p style="font-size: 45px;"><span class="highlight-mixed">⚙️ Skills:</span></p>
+                <p style="font-size: 26px;"><span class="highlight-mixed">⚙️ Skills:</span></p>
     </div>
     <div class="skills-container">
     
-    <div id="skills">
+    <div id="skills" class="fade-in">
   <div class="skills-category">
-    <h4>Programming Languages</h4>
+    <h4 style="font-size:20px;">Programming Languages</h4>
     <ul>
       <li>C++</li>
       <li>Python</li>
@@ -96,7 +105,7 @@
   </div>
   
   <div class="skills-category">
-    <h4>Web Development</h4>
+    <h4 style="font-size:20px;">Web Development</h4>
     <ul>
       <li>React</li>
       <li>Tailwind CSS</li>
@@ -108,7 +117,7 @@
   </div>
   
   <div class="skills-category">
-    <h4>Databases and Backend</h4>
+    <h4 style="font-size:20px;">Databases and Backend</h4>
     <ul>
       <li>Firebase</li>
       <li>MongoDB</li>
@@ -117,7 +126,7 @@
   </div>
   
   <div class="skills-category">
-    <h4>Tools and Technologies</h4>
+    <h4 style="font-size:20px;">Tools and Technologies</h4>
     <ul>
       <li>Git</li>
       <li>VSCode</li>
@@ -130,26 +139,26 @@
 </div>
 </div>
 <section id="work" class="fade-in">
-    <div class="container">
-        <p style="font-size: 45px;"><span class="work-experience">Work Experience</span></p>
+    <div class="container" style="padding-top: 0px;">
+        <p style="font-size: 30px; padding-top: 0;"><span class="work-experience">Work Experience</span></p>
         <div class="work-item">
-            <h3 style="font-size: 45px;">Web Developer at CAEN - Central IT Provider for Michigan Engineering</h3>
-            <p class="work-date" style="font-size:34px;">May 2024 - August 2024</p>
-            <ul style="font-size: 34px;">
+            <h3 style="font-size: 24px;" class="project-title">Web Developer at CAEN - Central IT Provider for Michigan Engineering</h3>
+            <p class="work-date" style="font-size:17px;">May 2024 - August 2024</p>
+            <ul style="font-size: 19px;">
                 <li>Led migration of University of Michigan faculty websites to<span class="highlighter"> WordPress</span> and created interactive features using
                     <span class="highlighter">JavaScript</span> and <span class="highlighter">PHP</span>, enhancing user experience, operational efficiency, and online engagement for Michigan
                     Engineering.</li>
-                <li>Engineered a dynamic email marketing campaign, designing and managing weekly newsletters via Constant Contact. This initiative reached a vast audience of <span class="highlighter">51,225</span> students and <span class="highlighter">7,954</span> faculty members, driving an increase in open rates from <span class="highlighter">72% </span> to <span class="highlighter">84%</span>.</li>
-                <li>Developed an automated data integration system using <span class="highlighter">Google Apps Script</span>, synchronizing event information from Google Sheets directly to the university's WordPress sites and Constant Contact newsletters. This reduced manual data entry by <span class="highlighter">75% </span>and improved event information accuracy by <span class="highlighter">95%</span>.</li>
+                <li>Engineered a dynamic email marketing campaign, designing and managing weekly newsletters via Constant Contact. This initiative reached a vast audience of <span class="highlighter">51,225</span> students and <span class="highlighter">7,954</span> faculty members, driving an increase in open rates from<span class="highlighter">72%</span> to<span class="highlighter">84%</span>.</li>
+                <li>Developed an automated data integration system using <span class="highlighter">Google Apps Script</span>, synchronizing event information from Google Sheets directly to the university's WordPress sites and Constant Contact newsletters. This reduced manual data entry by<span class="highlighter">75%</span>and improved event information accuracy by<span class="highlighter">95%</span>.</li>
             </ul>
-            <p style="font-size: 34px;"><span class="highlight">Here are a few examples of website migrations that I have worked on for the university:</span></p>
-            <ul class="interests-list" style="font-size: 34px;">
+            <p style="font-size: 19px;"><span class="highlight">Here are a few examples of website migrations that I have worked on for the university:</span></p>
+            <ul class="interests-list" style="font-size: 19px;">
             <li><a class="custom-link" href="https://pmt.engin.umich.edu">CoE Project Management Team (PMT)</a></li>
             <li><a class="custom-link" href="https://macromolecular.engin.umich.edu/">Macromolecular Science and Engineering</a></li>
             <li><a class="custom-link" href="https://shaolab.engin.umich.edu/">Shao Manufacturing Lab</a></li>
         </ul>
         <div class="cta-buttons">
-    <a href="Isha-Reference.pdf" class="cta-button" style="font-size: 27px; padding: 10px 20px;">View Reference</a>
+    <a href="Isha-Reference.pdf" class="cta-button" style="font-size: 16px; padding: 10px 20px;">View Reference</a>
 </div>
 </div>
     </div>
@@ -158,9 +167,9 @@
 <section id="work2" class="fade-in">
     <div class="container">
         <div class="work-item">
-            <h3 style="font-size: 45px;">Software Engineering Intern at MTN Group - Largest Telecom Company in Africa</h3>
-            <p class="work-date" style="font-size: 34px;">May 2023 - August 2023</p>
-            <ul style="font-size: 34px;">
+            <h3 style="font-size: 24px;">Software Engineering Intern at MTN Group - Largest Telecom Company in Africa</h3>
+            <p class="work-date" style="font-size: 17px;">May 2023 - August 2023</p>
+            <ul style="font-size: 19px;">
                 <li>Developed key frontend components for MTN's product catalog application using <span class="highlighter">HTML5, CSS3, Python with Django framework, and Bootstrap</span>. Created an intuitive login interface, responsive admin dashboard, and functional management panel.</li>
                 <li>Collaborated with a team of 3 engineers to design and implement the database structure using <span class="highlighter">SQL</span>, developing efficient <span class="highlighter">CRUD </span>functionality and integrating  <span class="highlighter">LDAP </span>authentication for enhanced security.</li>
                 <li>Actively participated in code reviews, implemented <span class="highlighter">responsive design principles</span>, testing, and debugging activities, contributing to a <span class="highlighter">20%</span> improvement in application stability and a <span class="highlighter">30% </span>reduction in post-deployment issues.</li>
@@ -179,9 +188,9 @@
 <section id="work3" class="fade-in">
     <div class="container">
         <div class="work-item">
-            <h3 style="font-size: 45px;">Product and Software Engineer at MProduct 2022 Cohort - University of Michigan </h3>
-            <p class="work-date" style="font-size: 34px;">Aug 2022 - Dec 2022</p>
-            <ul style="font-size: 34px;">
+            <h3 style="font-size: 24px;">Product and Software Engineer at MProduct 2022 Cohort - University of Michigan </h3>
+            <p class="work-date" style="font-size: 17px;">Aug 2022 - Dec 2022</p>
+            <ul style="font-size: 19px;">
                 <li>Developed an end-to-end secure, web-based voting system for hosting elections using <span class="highlighter">JavaScript, HTML, CSS, mySQL, Git and Unix </span>in a collaborative, corporate environment.</li>
                 <li>Formulated <span class="highlighter">RSA and Caesar ciphers</span> to securely protect user information and data.</li>
                 <li>Enhanced user-friendliness and participation by <span class="highlighter">35% </span>and cut down result turn around time by around <span class="highlighter">30%</span>.</li>
@@ -193,29 +202,80 @@
 
         <section id="projects" class="fade-in">
             <div class="container">
-                 <p style="font-size: 45px;"><span class="work-experience">Projects</span></p>
+                 <p style="font-size: 30px;"><span class="work-experience">Side Projects</span></p>
                 <div class="project-grid">
                     <div class="project-card" data-id="1">
-                        <img src="path/to/project1-image.jpg" alt="Project 1">
-                        <h3>Moo-Box</h3>
-                        <p>Short description of project 1.</p>
+                        <img src="moobox.png" alt="Project 1">
+                        <h3 style="font-size: 19px;" class="project-title"><span class="highlight">MooBox</span> - Productivity Web Application</h3>
+                        <p>A full-stack productivity web application with a playful cow theme. Features include dynamic to-do lists, Pomodoro timer, and focus mode. Built with React, Node.js, and Tailwind CSS, it offers a responsive UI with gamification elements to boost engagement and task completion rates.</p>
+                        <div class="skills-section">
+            <p style="font-size:19px;"> <span style="font-weight: bold; background-color: moccasin; padding: 0 5px;">Technologies Used</span>: Spotify API, React, Node.js, HTML, Tailwind CSS, JavaScript, RESTful API, Responsive Design, Vercel</p>
+            <div class="project-links">
+            <a href="https://github.com/ikalwani/MooBox.git" style="font-size:16px; padding: 8px 15px;" class="cta-button" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> View Code
+            </a>
+            <a href="https://moo-box.vercel.app/" style="font-size:16px; padding: 8px 15px;" class="cta-button" target="_blank" rel="noopener noreferrer">View Website
+            </a>
+        </div>
+        </div>
                     </div>
                     <div class="project-card" data-id="2">
-                        <img src="path/to/project2-image.jpg" alt="Project 2">
-                        <h3>Visa Climate Tech Hackathon 2024: AirRide: Eco-Friendly Furniture Relocation App</h3>
-                        <p>Short description of project 2.</p>
-                    </div>
+    <img src="visa.png" alt="AirRide - Eco-Friendly Furniture Relocation App">
+    <h3 style="font-size: 19px;" class="project-title"><span class="highlight">AirRide</span> - Eco-Friendly Furniture Relocation App</h3>
+    <p>AirRide revolutionizes furniture relocation by connecting users with local drivers for efficient, eco-friendly transport. With an optimized booking system, real-time tracking, and carbon footprint monitoring, it addresses the 12 million tons of annual furniture waste in the U.S. by promoting reuse and reducing emissions.</p>
+    <div class="skills-section">
+        <p style="font-size:19px;"> <span style="font-weight: bold; background-color: moccasin; padding: 0 5px;">Technologies Used</span>: React, Node.js, MongoDB, Figma, Google Maps API, Firebase Cloud Messaging, Express.js</p>
+    </div>
+    <div class="features-section">
+    </div>
+    <div class="project-links">
+            <a href="https://www.figma.com/proto/ReocuxY5Tdvx2bdxQGNw9b/AirRide?t=1ZZ84qb5N1fDJWQQ-1" style="font-size:16px; padding: 8px 15px;" class="cta-button" target="_blank" rel="noopener noreferrer">View Figma
+            </a>
+            <a href="https://www.loom.com/share/f12971a7eecf421f84d6f30013ddf79f" style="font-size:16px; padding: 8px 15px;" class="cta-button" target="_blank" rel="noopener noreferrer">View Demo
+            </a>
+    </div>
+</div>
                     <div class="project-card" data-id="3">
-                        <img src="path/to/project2-image.jpg" alt="Project 2">
-                        <h3>High-Altitude Weather Balloon Instrumentation</h3>
-                        <p>Collaborated with Professor Aaron Ridley to design and build atmospheric and remote sensing instruments, develop MATLAB programs for sensor control and data visualization, and test, deploy, and process sensor data for high-altitude balloon flights.</p>
+                        <img src="spoticry.png" alt="Project 2">
+                       <h3 style="font-size: 19px;"><span class="highlight">SpotiCry</span> - Emotional Tracking Web App</h3>
+                        <p>Spoticry is an innovative web application that allows users to log and analyze their emotional experiences, specifically focusing on crying episodes. Inspired by Spotify's year-in-review feature, Spoticry provides insightful data visualizations and personalized reports on users' emotional patterns.</p>
+                        <div class="skills-section">
+        <p style="font-size:19px;"> <span style="font-weight: bold; background-color: moccasin; padding: 0 5px;">Technologies Used</span>: React, Node.js, MongoDB, Netlify, Express.js, Chart.js, D3.js, HTML, CSS, JavaScript, RESTful API</p>
+         <div class="project-links">
+            <a href="" style="font-size:16px; padding: 8px 15px;" class="cta-button" target="_blank" rel="noopener noreferrer">Coming Soon
+            </a>
+    </div>
+    </div>
                     </div>
                     <div class="project-card" data-id="4">
-                        <img src="path/to/project2-image.jpg" alt="Project 2">
-                        <h3>High-Altitude Weather Balloon Instrumentation</h3>
-                        <p>Collaborated with Professor Aaron Ridley to design and build atmospheric and remote sensing instruments, develop MATLAB programs for sensor control and data visualization, and test, deploy, and process sensor data for high-altitude balloon flights.</p>
+                        <img src="posa.png" alt="Project 2">
+                        <h3 style="font-size: 19px;"><span class="highlight">Posa Magazine</span> - Web Development for South Asian Representation</h3>
+                        <p>Developing the digital presence for POSA (Portrait of South Asia), a magazine focused on authentic South Asian representation at the University of Michigan. This involves creating an accessible, user-friendly website that echoes the magazine's mission of inclusivity and authenticity.</p>
+                         <p style="font-size:19px;"> <span style="font-weight: bold; background-color: moccasin; padding: 0 5px;">Technologies Used</span>: React, HTML, CSS, JavaScript, GraphQL, Adobe Creative Suite</p>
+                         <div class="project-links">
+            <a href="https://posamag.com/" style="font-size:16px; padding: 8px 15px;" class="cta-button" target="_blank" rel="noopener noreferrer">View Website
+            </a>
+    </div>
                     </div>
+                
+                     <div class="project-card" data-id="4">
+                        <img src="wb.png" alt="Project 2">
+                        <h3 style="font-size: 19px;"><span class="highlight">High-Altitude Weather Balloon Instrumentation</span></h3>
+                        <p>Collaborated with Professor Aaron Ridley to design and build atmospheric and remote sensing instruments, develop MATLAB programs for sensor control and data visualization, and test, deploy, and process sensor data for high-altitude balloon flights.</p>
+                         <p style="font-size:19px;"> <span style="font-weight: bold; background-color: moccasin; padding: 0 5px;">Technologies Used</span>: MATLAB, Embedded Systems, Circuit Design, Sensor Programming, Data Visualization</p>
+                           <div class="project-links">
+            <a href="https://www.youtube.com/watch?v=L2fNxag5ul4" style="font-size:16px; padding: 8px 15px;" class="cta-button" target="_blank" rel="noopener noreferrer">View Demo
+            </a>
+    </div>
+                    </div>
+
+                     <div class="project-card" data-id="5">
+                        <img src="web.png" alt="Project 2">
+                        <h3 style="font-size: 19px;"><span class="highlight">Portfolio</span></h3>
+                       <p>You're looking at it! This very website is a project showcasing... itself. Meta, right?</p>
+                       <p style="font-size:19px;"> <span style="font-weight: bold; background-color: moccasin; padding: 0 5px;">Technologies Used</span>: HTML, CSS, JavaScript</p>
                 </div>
+            </div>
             </div>
         </section>
         </section>

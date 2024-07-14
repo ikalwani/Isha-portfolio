@@ -14,18 +14,24 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 115px;
+    height: auto;
+    padding-top: 20px;
+
 }
 
  header {
     background: var(--primary-color);
-    padding: 2rem 0;
     transition: background 0.3s;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    font-size: 29px;
+    font-size: 15px;
     color: #ffffff;
 }
 .work-experience {
@@ -39,11 +45,11 @@
 }
 
  #skills ul li {
-     font-size: 2rem;
+     font-size: 18px;
      line-height: 1.5;
  }
  .skills-container {
-     padding: 0 100px;
+     padding: 0 50px;
  }
 
  header.scrolled {
@@ -52,21 +58,21 @@
 
 .skills-category {
     margin-bottom: 1rem;
-    font-size: 35px;
+    font-size: 18px;
     margin-left: 100px;
     margin-right: 100px;
-    gap: 2px 5px;
+    gap: 0.5px 3px;
 }
 
 .skills-category h4 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
-    font-size:35px;
+    font-size:18px;
 }
 .skills-category h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
-    font-size: 60px;
+    font-size: 18px;
 }
 .social-links {
     margin-top: 10px;
@@ -82,7 +88,8 @@
 }
 
 .header-items{
-    padding: 22px 0
+    padding: 30px 0;
+    list-style: none;
 }
 
 .social-links a:hover {
@@ -98,12 +105,12 @@
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 
  .container {
-     width: 80%;
+     width: 90%;
      margin: auto;
      overflow: hidden;
  }
@@ -171,12 +178,12 @@
  #tagline #rotating-text {
      font-weight: bold;
      transition: opacity 0.5s ease;
-     font-size: 45px;
+     font-size: 23px;
      background-color: #c4d7e4;
  }
 
  .subtext {
-     margin-bottom: 2rem;
+     margin-bottom: 1rem;
  }
 
  .cta-buttons {
@@ -187,13 +194,14 @@
 
  .cta-button {
      display: inline-block;
-     padding: 0.5rem 1.1rem;
+     padding: 0.2rem 0.1rem;
      border-radius: 5px;
      background: var(--accent-color);
      color: var(--bg-color);
      text-decoration: none;
      font-weight: bold;
      transition: background 0.3s;
+     border: 2px solid var(--border-color);
  }
 
  .profile-photo {
@@ -204,7 +212,7 @@
 
 
  .about-text p {
-     font-size: 60px;
+     font-size: 30px;
  }
 
  .highlight-mixed {
@@ -214,7 +222,6 @@
      border-radius: 4px;
  }
 .highlighter{
-/* background-color: #c4d7e4; */
     font-weight: bold;
     padding: 2px 4px;
     border-radius: 4px;
@@ -229,8 +236,8 @@
 .about-content {
     display: flex;
     align-items: center;
-    gap: 500px;
-    font-size: 40px;
+    gap: 200px;
+    font-size: 30px;
 }
  .cta-button.secondary {
      background: var(--secondary-color);
@@ -558,7 +565,7 @@
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem 0;
+        padding: 0.1rem 0;
     }
 
     nav ul {
@@ -686,12 +693,11 @@ img {
 
  .figma-images {
      margin-top: 30px;
-     min-height: 500px;
+     max-height: 460px;
      /* Adjust min-height as needed */
  }
 
  .figma-images h4 {
-     font-size: 24px;
      margin-bottom: 10px;
  }
 
@@ -699,17 +705,87 @@ img {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-     margin-top: 20px;
  }
-
 .figma-images .image-container img {
-    width: calc(40% - 50px);
-    max-width: 40%;
+    width: 40%;
+    /* Ensure the image fills its container */
+    height: px;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Prevent image from exceeding its container width */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
-
  .figma-images .image-container img:last-child {
      margin-right: 0;
+ }
+
+ .menu-toggle {
+     display: none;
+     flex-direction: column;
+     cursor: pointer;
+ }
+
+ .menu-toggle div {
+     width: 20px;
+     height: 2px;
+     background-color: #333;
+     margin: 4px 0;
+ }
+
+ @media (max-width: 768px) {
+     .menu-toggle {
+         display: flex;
+     }
+
+     .header-items {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+     }
+
+     .header-items.show {
+         display: flex;
+     }
+
+     .header-items li {
+         margin-left: 0;
+         margin-top: 10px;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .project-title {
+         font-size: 13px;
+     }
+
+     .project-description {
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .project-title {
+         font-size: 10px;
+     }
+
+     .project-description {
+         font-size: 14px;
+     }
+ }
+
+ .fade-in {
+     opacity: 0;
+     transform: translateY(20px);
+     transition: opacity 0.5s ease, transform 0.5s ease;
+ }
+
+ .fade-in.active {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ .cta-button+.cta-button {
+     margin-left: 15px;
  }
