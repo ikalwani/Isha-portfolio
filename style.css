@@ -6,6 +6,10 @@
      --card-bg-color: #ffffff;
  }
 
+ html {
+     scroll-behavior: smooth;
+ }
+
  body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
@@ -19,7 +23,7 @@
 
 .logo img {
     width: 115px;
-    height: auto;
+    height: 50px;
     padding-top: 20px;
 
 }
@@ -31,7 +35,7 @@
     width: 100%;
     top: 0;
     z-index: 1000;
-    font-size: 15px;
+    font-size: 17px;
     color: #ffffff;
 }
 .work-experience {
@@ -59,9 +63,9 @@
 .skills-category {
     margin-bottom: 1rem;
     font-size: 18px;
-    margin-left: 100px;
-    margin-right: 100px;
     gap: 0.5px 3px;
+    padding-left:20px;
+    padding-right: 20px
 }
 
 .skills-category h4 {
@@ -84,7 +88,7 @@
     font-size: 1.5rem;
     text-decoration: none;
     transition: color 0.3s;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .header-items{
@@ -103,7 +107,7 @@
 .skills-category ul li {
     background: var(--secondary-color);
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    padding: 2rem;
     border-radius: 10px;
     font-size: 18px;
 }
@@ -162,14 +166,6 @@
      text-align: center;
      color:black;
      font-size: 38px;
- }
- #home .container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     text-align: center;
-     padding: 20px;
  }
 
   #home h1 {
@@ -392,6 +388,10 @@
      transition: background 0.3s;
  }
 
+ .footer{
+    font-size: 10px;
+ }
+
 
  footer span {
      cursor: help;
@@ -537,9 +537,52 @@
        }
 
        .project-card {
-           width: 45%;
+           width: 100%;
        }
    }
+
+  @media (max-width: 375px) {
+      body {
+          font-size: 13px;
+      }
+
+      .container {
+          width: 90%;
+      }
+
+      .active .content h1 {
+          font-size: 21px;
+          padding-top: 40px;
+      }
+
+      #tagline {
+          font-size: 12px;
+      }
+
+      #tagline #rotating-text {
+          font-size: 22px;
+      }
+
+      .subtext {
+          font-size: 9px;
+      }
+
+      .cta-buttons .cta-button {
+          font-size: 10px;
+          padding: 4px 8px;
+      }
+
+      #skills {
+          grid-template-columns: 1fr;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+          font-size: 10px;
+      }
+  }
 
    @media (min-width: 1024px) {
        body {
@@ -551,11 +594,11 @@
        }
 
        #home h1 {
-           font-size: 3rem;
+           font-size: 4rem;
        }
 
        #tagline {
-           font-size: 2rem;
+           font-size: 4rem;
        }
 
        #skills {
@@ -563,7 +606,7 @@
        }
 
        .project-card {
-           width: 100%;
+           width: 40%;
        }
    }
 
@@ -681,7 +724,7 @@ img {
 
     #skills li {
         font-size: 0.6rem;
-        padding: 0.1rem 0.1rem;
+        padding: 0.2rem 0.7rem;
         margin: 0.1rem 0;
         width: auto;
     }
@@ -775,7 +818,16 @@ img {
      }
 
      .project-description {
-         font-size: 14px;
+         font-size: 10px;
+     }
+
+     .project-card{
+        width:100%;
+     }
+
+     .cta-buttons+.cta-button{
+        margin-left: 0px;
+        gap:0px;
      }
  }
 
@@ -794,122 +846,20 @@ img {
      margin-left: 15px;
  }
 
- @media (max-width: 1200px) {
-     #home h1 {
-         font-size: 30px;
-         padding-top: 80px;
-     }
-
-     #tagline {
-         font-size: 20px;
-     }
-
-     .subtext {
-         font-size: 18px;
-     }
-
-     .cta-button {
-         font-size: 16px;
-         padding: 7px 13px;
-     }
- }
-
- @media (max-width: 992px) {
-     #home h1 {
-         font-size: 28px;
-         padding-top: 60px;
-     }
-
-     #tagline {
-         font-size: 18px;
-     }
-
-     .subtext {
-         font-size: 16px;
-     }
-
-     .cta-button {
-         font-size: 15px;
-         padding: 6px 12px;
-     }
- }
-
- @media (max-width: 768px) {
-     #home h1 {
-         font-size: 26px;
-         padding-top: 50px;
-     }
-
-     #tagline {
-         font-size: 16px;
-     }
-
-     .subtext {
-         font-size: 14px;
-     }
-
-     .cta-button {
-         font-size: 14px;
-         padding: 5px 10px;
-     }
- }
-
- @media (max-width: 576px) {
-     #home h1 {
-         font-size: 24px;
-         padding-top: 40px;
-     }
-
-     #tagline {
-         font-size: 14px;
-     }
-
-     .subtext {
-         font-size: 12px;
-     }
-
-     .cta-button {
-         font-size: 12px;
-         padding: 4px 8px;
-     }
- }
-
- @media (max-width: 400px) {
-     #home h1 {
-         font-size: 22px;
-         padding-top: 30px;
-     }
-
-     #tagline {
-         font-size: 12px;
-     }
-
-     .subtext {
-         font-size: 10px;
-     }
-
-     .cta-button {
-         font-size: 10px;
-         padding: 3px 6px;
-     }
- }
 
  @media (max-width: 360px) {
-     #home h1 {
-         font-size: 10px;
-         padding-top: 1000px;
+     #home .content {
+         font-size: 1rem;
      }
 
-     #tagline {
-         font-size: 8px;
+     h1,
+     h2,
+     h3,
+     h4 {
+         font-size: 1.5rem;
      }
 
-     .subtext {
-         font-size: 1px;
-     }
-
-     .cta-button {
-         font-size: 8px;
-         padding: 2px 4px;
+     .skills-category ul li {
+         font-size: 1rem;
      }
  }
