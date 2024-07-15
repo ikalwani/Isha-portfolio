@@ -279,7 +279,7 @@
 
  .project-card {
      background: var(--card-bg-color);
-     width: 100%;
+     width: 36%;
      height: auto;
      margin: 2rem 0;
      padding: 2rem;
@@ -529,7 +529,7 @@
        }
 
        .project-card {
-           width: 100%;
+           width: 45%;
        }
    }
 
@@ -552,6 +552,10 @@
 
        #skills {
            grid-template-columns: repeat(4, 1fr);
+       }
+
+       .project-card {
+           width: 100%;
        }
    }
 
