@@ -15,15 +15,18 @@ setInterval(changeText, 3000);
 changeText(); 
 
 
-document.getElementById("menu-toggle").addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("menu-toggle").addEventListener("click", function () {
     var headerItems = document.getElementById("header-items");
     headerItems.classList.toggle("show");
-});
-var menuItems = document.querySelectorAll(".header-items li a");
-menuItems.forEach(function (menuItem) {
-  menuItem.addEventListener("click", function () {
-    var headerItems = document.getElementById("header-items");
-    headerItems.classList.remove("show");
+  });
+
+  var menuItems = document.querySelectorAll(".header-items li a");
+  menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener("click", function () {
+      var headerItems = document.getElementById("header-items");
+      headerItems.classList.remove("show");
+    });
   });
 });
 
