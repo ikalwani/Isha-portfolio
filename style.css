@@ -92,12 +92,15 @@
 }
 
 .header-items {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    background: #385170;
+    width: 200px;
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.3);
 }
-
 .social-links a:hover {
     color: #0066cc;
 }
@@ -207,6 +210,7 @@
 
  .subtext {
      margin-bottom: 1rem;
+     font-size: 20px;
  }
 
  .cta-buttons {
@@ -560,9 +564,9 @@
        }
    }
 
-  @media (max-width: 375px) {
+  @media (max-width: 360px) {
       body {
-          font-size: 13px;
+          font-size: 11px;
       }
 
       .container {
@@ -575,19 +579,19 @@
       }
 
       #tagline {
-          font-size: 12px;
+          font-size: 8px;
       }
 
       #tagline #rotating-text {
-          font-size: 22px;
+          font-size: 21px;
       }
 
       .subtext {
-          font-size: 9px;
+          font-size: 15px;
       }
 
-      .cta-buttons .cta-button {
-          font-size: 10px;
+      .cta-button {
+          font-size: 8px;
           padding: 4px 8px;
       }
 
@@ -599,7 +603,7 @@
       h2,
       h3,
       h4 {
-          font-size: 10px;
+          font-size: 9px;
       }
   }
 
@@ -768,7 +772,6 @@ img {
  .figma-images {
      margin-top: 30px;
      max-height: 460px;
-     /* Adjust min-height as needed */
  }
 
  .figma-images h4 {
@@ -815,6 +818,10 @@ img {
          display: none;
          flex-direction: column;
          width: 100%;
+            right: 0;
+            background-color: #385170;
+            width: 100px;
+            box-shadow: 0 8px 9px rgba(0, 0, 0, 0.3);
      }
 
      .header-items.show {
@@ -822,9 +829,14 @@ img {
      }
 
      .header-items li {
-         margin-left: 0;
-         margin-top: 10px;
+        margin: 10px 0;
+            text-align: center;
+            padding-right: 20px;
      }
+         .header-right {
+             flex-direction: column;
+             align-items: flex-end;
+         }
  }
 
  @media (max-width: 768px) {
@@ -881,7 +893,7 @@ img {
      h2,
      h3,
      h4 {
-         font-size: 1.5rem;
+         font-size: 10px;
      }
 
      .skills-category ul li {

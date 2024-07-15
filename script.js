@@ -16,8 +16,15 @@ changeText();
 
 
 document.getElementById("menu-toggle").addEventListener("click", function () {
-  var headerItems = document.getElementById("header-items");
-  headerItems.classList.toggle("show");
+    var headerItems = document.getElementById("header-items");
+    headerItems.classList.toggle("show");
+});
+var menuItems = document.querySelectorAll(".header-items li a");
+menuItems.forEach(function (menuItem) {
+  menuItem.addEventListener("click", function () {
+    var headerItems = document.getElementById("header-items");
+    headerItems.classList.remove("show");
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
