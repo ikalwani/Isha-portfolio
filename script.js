@@ -1,5 +1,5 @@
 const rotatingText = document.getElementById("rotating-text");
-const texts = ["Software Engineering", "Full Stack Development", "Constantly Growing", "Making Impact"];
+const texts = ["Software Engineering", "Full Stack Development", "Making Impact"];
 let index = 0;
 
 function changeText() {

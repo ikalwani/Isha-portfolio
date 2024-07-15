@@ -120,7 +120,7 @@
 }
 
  .container {
-     width: 90%;
+     width: 100%;
      margin: auto;
      overflow: hidden;
  }
@@ -187,10 +187,13 @@
      margin: 0;
      font-size: 3rem;
  }
+#tagline {
+    font-size: 18px;
+    /* Adjust the font size as per your preference */
+}
 
-
- #tagline {
-     font-size: 2rem;
+ .active .container .content .tagline {
+     font-size: 10px;
      margin: 1rem 0;
  }
 
@@ -232,7 +235,7 @@
 
 
  .about-text p {
-     font-size: 30px;
+     font-size: 20px;
  }
 
  .highlight-mixed {
@@ -559,28 +562,24 @@
 
   @media (max-width: 360px) {
       body {
-          font-size: 11px;
+          font-size: 10px;
       }
 
-      .container {
-          width: 90%;
-      }
-
-      .active .content h1 {
+      .active .container .content h1 {
           font-size: 21px;
           padding-top: 40px;
       }
 
       #tagline {
-          font-size: 8px;
+          font-size: 19px;
       }
 
       #tagline #rotating-text {
-          font-size: 21px;
+          font-size: 19px;
       }
 
-      .subtext {
-          font-size: 15px;
+      .active .container .content .subtext {
+          font-size: 12px;
       }
 
       .cta-button {
