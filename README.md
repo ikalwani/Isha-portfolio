@@ -14,18 +14,6 @@ This repository contains the source code for my personal portfolio website. The 
 - CSS3
 - JavaScript
 
-## Project Structure
-portfolio/
-│
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── main.js
-├── images/
-│   └── [project images and personal photo]
-└── README.md
-
 ## Setup and Deployment
 1. Clone this repository
 2. Open `index.html` in a web browser to view the site locally
