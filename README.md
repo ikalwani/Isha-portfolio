@@ -16,8 +16,8 @@ This repository contains the source code for my personal portfolio website. The 
 
 ## Setup and Deployment
 1. Clone this repository
-2. Open `index.html` in a web browser to view the site locally
-3. To deploy, upload all files to your web hosting service/Use live Server extension on VS Code (My personal favourity to view the website)/Just click on the index.html : )
+2. Open `index.html` in a web browser to view the site locally / Use live Server extension on VS Code (My personal favourite :)
+3. To deploy, upload all files to your web hosting service
 
 ## Future Improvements
 - Add a blog section to share my thoughts and experiences
