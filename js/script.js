@@ -269,3 +269,44 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", onScroll);
   onScroll();
 });
+
+
+
+const quickFindInput = document.getElementById("quickFindInput");
+const navItems = document.querySelectorAll(".nav-item");
+
+document.addEventListener("keydown", function (e) {
+  if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+    e.preventDefault();
+    quickFindInput.focus();
+  }
+});
+
+quickFindInput.addEventListener("input", function () {
+  const searchTerm = this.value.toLowerCase();
+
+  navItems.forEach((item) => {
+    const text = item.textContent.toLowerCase();
+    const shouldShow = text.includes(searchTerm);
+    item.style.display = shouldShow ? "flex" : "none";
+  });
+});
+
+document.addEventListener("click", function (e) {
+  if (!quickFindInput.contains(e.target)) {
+    quickFindInput.value = "";
+    navItems.forEach((item) => {
+      item.style.display = "flex";
+    });
+  }
+});
+
+quickFindInput.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    this.value = "";
+    navItems.forEach((item) => {
+      item.style.display = "flex";
+    });
+    this.blur();
+  }
+});
